@@ -19,16 +19,16 @@ class App3Activity : AppCompatActivity() {
         val confirmBtn = findViewById<Button>(R.id.app3ConfirmBtn)
 
         val riddle1 = Riddle(
-            "Два конца, два кольца,\n" +
-                    "Посредине гвоздик.", "Ножницы"
+            """Два конца, два кольца, 
+                |Посредине гвоздик.""".trimMargin(), "Ножницы"
         )
         val riddle2 = Riddle(
-            "Зимой — звезда,\n" +
-                    "Весной — вода.", "Снежинка"
+            """Зимой — звезда,
+                |Весной — вода.""".trimMargin(), "Снежинка"
         )
         val riddle3 = Riddle(
-            "Загадка от Жака Фреско\n" +
-                    "Чё задали?", "Амогус"
+            """Загадка от Жака Фреско
+                |Чё задали?""".trimMargin(), "Амогус"
         )
         val riddles = listOf(riddle1, riddle2, riddle3)
         var currentRiddle = Riddle("not determ", "not determ")
@@ -51,7 +51,9 @@ class App3Activity : AppCompatActivity() {
                         .compareTo(currentRiddle.answer, ignoreCase = true) == 0
                 ) {
                     makeToast("Верно!").show()
-                } else makeToast("Не верно!").show()
+                } else {
+                    makeToast("Не верно!").show()
+                }
             }
         }
     }
