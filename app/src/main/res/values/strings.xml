@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Homework14</string>
+    <string name="app_3">App 3</string>
+    <string name="app_4">App 4</string>
+    <string name="app_1">App 1</string>
+    <string name="app_2">App 2</string>
+    <string name="app1_edit_text_hint">Введите текст здесь</string>
+    <string name="btn_format">Форматировать!</string>
+    <string name="app2_edit_text_hint">Введите вопрос здесь</string>
+    <string name="app2_btn_answer">Ответ!</string>
+    <string name="app3_btn">Новая загадка!</string>
+    <string name="app3_edit_text_hint">ответ</string>
+    <string name="app3_confirm">Принять</string>
+    <string name="app4_title">Калькулятор</string>
+    <string name="_1st_number">1st number</string>
+    <string name="_2d_number">2d number</string>
+    <string name="addition">+</string>
+    <string name="multiplication">*</string>
+    <string name="subtraction">-</string>
+    <string name="division">/</string>
+    <string name="reset">C</string>
 </resources>
