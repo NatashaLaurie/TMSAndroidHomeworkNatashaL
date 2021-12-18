@@ -14,7 +14,7 @@ class App1Activity : AppCompatActivity() {
         val btnTextFormat = findViewById<Button>(R.id.btnTextFormat)
         val inputText = findViewById<EditText>(R.id.editText)
         val formattedTextView = findViewById<TextView>(R.id.formattedText)
-
+//test
         btnTextFormat.setOnClickListener {
             var string = inputText.text.toString()
             string.replace('а', 'о', true).also { string = it }
