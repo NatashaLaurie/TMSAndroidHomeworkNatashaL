@@ -33,9 +33,9 @@ class App1Activity : AppCompatActivity() {
 //            formattedTextView.text = string
            var sl = string.split(" ")
             //string = sl.joinToString(" ")
-            sl.forEach() {
-                if (numberMap.containsKey(it)) {
-                    string.replace(it,numberMap.getValue(it),true).also { string = it
+            string.forEach() {
+                if (numberMap.containsKey(it.toString())) {
+                    string.replace(it.toString(),numberMap.getValue(it.toString()),true).also { string = it.toString()
                     sl=string.split(" ")}
                 }
             }
